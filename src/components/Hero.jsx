@@ -18,7 +18,7 @@ export default function Hero({ text }) {
 
       <div className="hero-right">
         <div className="hero-photo">
-          <img src="/picture.jpg" alt="Andjela" />
+          <img src="./picture.jpg" alt="Andjela" />
         </div>
       </div>
     </section>
