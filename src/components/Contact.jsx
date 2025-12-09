@@ -6,7 +6,7 @@ export default function Contact({ text }) {
       <p className="contact">
         📧{" "}
         <a href="mailto:andjelastankovic2016@gmail.com">
-          andjelastankovic2016@gmail.com
+           {text.contact.emailLabel}
         </a>
         <br />
         💼{" "}

@@ -34,7 +34,7 @@ export default function Experience({ text }) {
                   <div className="experience-header-right">
                     <span className="experience-period">{item.period}</span>
                     <span className="experience-toggle-icon">
-                      {isOpen ? <FaArrowAltCircleUp /> : <FaArrowAltCircleDown />}
+                      {<FaArrowAltCircleDown /> }
                     </span>
                   </div>
                 </div>
@@ -85,7 +85,7 @@ export default function Experience({ text }) {
                   <div className="experience-header-right">
                     <span className="experience-period">{item.period}</span>
                     <span className="experience-toggle-icon">
-                      {isOpen ? <FaArrowAltCircleUp /> : <FaArrowAltCircleDown />}
+                      {<FaArrowAltCircleDown /> }
                     </span>
                   </div>
                 </div>

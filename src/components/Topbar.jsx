@@ -1,31 +1,71 @@
 // src/components/Topbar.jsx
+import { useState, useEffect } from "react";
+
 export default function Topbar({ lang, setLang, text }) {
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [lang]);
+
+  useEffect(() => {
+    function onKey(e) {
+      if (e.key === "Escape") setOpen(false);
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  function handleNavClick() {
+    setOpen(false);
+  }
+
   return (
-    <header className="topbar">
+    <header className={`topbar ${open ? "is-open" : ""}`}>
       <div className="brand">{text.brand}</div>
 
-      <nav className="nav">
-        <a href="#home">{text.nav.home}</a>
-        <a href="#about">{text.nav.about}</a>
-        <a href="#skills">{text.nav.skills}</a>
-        <a href="#projects">{text.nav.projects}</a>
-        <a href="#experience">{text.nav.experience}</a>
-        <a href="#education">{text.nav.education}</a>
-        <a href="#contact">{text.nav.contact}</a>
+      <nav
+        className={`nav ${open ? "open" : ""}`}
+        aria-hidden={!open && window.innerWidth < 900 ? "true" : "false"}
+      >
+        <a href="#home" onClick={handleNavClick}>{text.nav.home}</a>
+        <a href="#about" onClick={handleNavClick}>{text.nav.about}</a>
+        <a href="#skills" onClick={handleNavClick}>{text.nav.skills}</a>
+        <a href="#projects" onClick={handleNavClick}>{text.nav.projects}</a>
+        <a href="#experience" onClick={handleNavClick}>{text.nav.experience}</a>
+        <a href="#education" onClick={handleNavClick}>{text.nav.education}</a>
+        <a href="#contact" onClick={handleNavClick}>{text.nav.contact}</a>
       </nav>
 
-      <div className="lang-toggle">
+      <div className="right-controls">
+        <div className="lang-toggle" role="group" aria-label="Language switch">
+          <button
+            onClick={() => setLang("sr")}
+            className={lang === "sr" ? "active" : ""}
+            aria-pressed={lang === "sr"}
+          >
+            SR
+          </button>
+          <button
+            onClick={() => setLang("en")}
+            className={lang === "en" ? "active" : ""}
+            aria-pressed={lang === "en"}
+          >
+            EN
+          </button>
+        </div>
+
         <button
-          onClick={() => setLang("sr")}
-          className={lang === "sr" ? "active" : ""}
+          className={`burger ${open ? "open" : ""}`}
+          onClick={() => setOpen((s) => !s)}
+          aria-label={`${open ? "Zatvori meni" : "Otvori meni"}`}
+          aria-expanded={open}
         >
-          SR
-        </button>
-        <button
-          onClick={() => setLang("en")}
-          className={lang === "en" ? "active" : ""}
-        >
-          EN
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <path className="line line1" d="M3 7h18" strokeWidth="2" strokeLinecap="round" />
+            <path className="line line2" d="M3 12h18" strokeWidth="2" strokeLinecap="round" />
+            <path className="line line3" d="M3 17h18" strokeWidth="2" strokeLinecap="round" />
+          </svg>
         </button>
       </div>
     </header>
