@@ -10,6 +10,7 @@ export default function Topbar({ lang, setLang, text }) {
         <a href="#skills">{text.nav.skills}</a>
         <a href="#projects">{text.nav.projects}</a>
         <a href="#experience">{text.nav.experience}</a>
+        <a href="#education">{text.nav.education}</a>
         <a href="#contact">{text.nav.contact}</a>
       </nav>
 

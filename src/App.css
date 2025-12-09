@@ -382,3 +382,63 @@ body {
     padding: 18px 16px;
   }
 }
+
+
+/* =========================
+   RAZLIČITE POZADINE PO SEKCIJAMA
+   ========================= */
+
+#about.section-card {
+  background: radial-gradient(circle at top left, #111827 0, #020617 70%);
+}
+
+#skills.section-card {
+  background: radial-gradient(circle at top right, #020617 0, #050816 70%);
+}
+
+#projects.section-card {
+  background: linear-gradient(135deg, #020617, #111827);
+}
+
+#experience.section-card {
+  background: linear-gradient(135deg, #020617, #1f2937);
+}
+
+#contact.section-card {
+  background: linear-gradient(135deg, #020617, #0f172a);
+}
+.section-card {
+  position: relative;
+  padding: 32px 28px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 0 40px rgba(56, 189, 248, 0.12),
+    0 0 80px rgba(168, 85, 247, 0.08),
+    inset 0 0 20px rgba(255, 255, 255, 0.03);
+  transition: 0.35s ease;
+}
+
+.section-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: linear-gradient(
+    135deg,
+    rgba(56, 189, 248, 0.6),
+    rgba(168, 85, 247, 0.5),
+    rgba(52, 211, 153, 0.5)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
