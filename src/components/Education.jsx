@@ -1,4 +1,4 @@
-// src/components/Education.jsx
+// // src/components/Education.jsx
 export default function Education({ text }) {
   const items = text.education || [];
 
@@ -10,7 +10,10 @@ export default function Education({ text }) {
         {items.map((item, index) => (
           <div
             key={item.degree + item.school}
-            className="education-item"
+            className={
+              "education-item " +
+              (index === 0 ? "education-item--master" : "education-item--bsc")
+            }
           >
             <div className="education-header">
               <h3
@@ -36,9 +39,7 @@ export default function Education({ text }) {
               </ul>
             )}
 
-            {index !== items.length - 1 && (
-              <div className="education-divider" />
-            )}
+            {index !== items.length - 1 && <div className="education-divider" />}
           </div>
         ))}
       </div>

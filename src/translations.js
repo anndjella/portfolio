@@ -352,7 +352,7 @@ sr: {
       school: "Fakultet organizacionih nauka, Univerzitet u Beogradu",
       period: "Nov 2024 - sada",
       desc: [
-        "Rad na master tezi pod naslovom <i><strong>'Analiza i primena DevOps praksi u Azure Serverless arhitekturi'</strong></i>."
+        "Izrada master rada pod naslovom <i><strong>'Analiza i primena DevOps praksi u Azure Serverless arhitekturi'</strong></i>."
       ],
     },
     {

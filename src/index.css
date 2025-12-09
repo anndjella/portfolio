@@ -690,3 +690,106 @@ button,
 .experience-item {
   -webkit-tap-highlight-color: transparent;
 }
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  pointer-events: none;
+  transition: background 200ms ease, opacity 200ms ease;
+  opacity: 0;
+  z-index: 50;
+}
+.menu-overlay.visible {
+  background: rgba(0,0,0,0.45);
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.topbar {
+  z-index: 60;
+  position: sticky;
+  top: 0;
+}
+
+
+@media (max-width: 900px) {
+  .nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: min(80%, 320px);
+    max-width: 360px;
+    transform: translateX(110%);
+    transition: transform 0.32s cubic-bezier(.2,.9,.2,1);
+    flex-direction: column;
+    padding: 3.4rem 1.2rem;
+    gap: 1rem;
+    box-shadow: -8px 0 30px rgba(0,0,0,0.5);
+    border-left: 1px solid rgba(120,150,255,0.06);
+    z-index: 65;
+    pointer-events: none;
+  }
+
+  .nav.open {
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+
+  .burger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 70;
+  }
+
+  .desktop-lang { display: none; }
+
+  .nav .nav-lang {
+    display: flex;
+    gap: 0.45rem;
+    margin-top: 0.6rem;
+  }
+}
+
+@media (min-width: 901px) {
+  .nav .nav-lang { display: none; }
+  .desktop-lang { display: inline-flex; gap: 0.45rem; }
+}
+.education-item {
+  padding: 1.3rem 1.4rem 1.1rem;
+  border-radius: 1rem;
+  background: rgba(10, 15, 38, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+  position: relative;
+}
+
+.education-item--master {
+  border-left: 6px solid #33b0ff;
+  background: linear-gradient(
+    145deg,
+    rgba(40, 110, 255, 0.12),
+    rgba(10, 15, 38, 0.85)
+  );
+}
+
+.education-item--bsc {
+  border-left: 6px solid #c77fff;
+  background: linear-gradient(
+    145deg,
+    rgba(199, 127, 255, 0.12),
+    rgba(10, 15, 38, 0.85)
+  );
+}
+
+.education-divider {
+  margin: 1rem 0 0 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+}
