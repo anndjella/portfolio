@@ -18,7 +18,7 @@ const ParticleBackground = () => {
         enable: true,
         zIndex: 0,
       },
-      fpsLimit: 60,
+      fpsLimit: 30,
       particles: {
         color: {
           value: "#4ea1ff",

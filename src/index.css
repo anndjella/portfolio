@@ -957,3 +957,15 @@ button,
   width: 100%;
   padding: 24px 18px 48px;
 }
+@media (max-width: 900px) {
+  #home, #about, #skills, #projects, #experience, #contact {
+    scroll-margin-top: 100px;
+}
+}
+canvas.tsparticles-canvas-el {
+    position: fixed !important; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
