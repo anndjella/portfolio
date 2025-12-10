@@ -13,7 +13,7 @@ export const translations = {
     },
     heroTitle: "Software Engineering & Data Engineering",
     heroSubtitle:
-      "Master's student in Software Engineering & AI with one year of Data Engineering experience. I enjoy building backend and full-stack solutions, working with SQL, ETL processes, and delivering well-tested, reliable systems.",
+      "Master's student in Software Engineering & AI with one year of Data Engineering experience. I enjoy building backend and full-stack solutions, working with SQL, ETL processes and delivering well-tested, reliable systems.",
     heroCtaPrimary: "View projects",
     heroCtaSecondary: "About me",
 
@@ -58,7 +58,7 @@ export const translations = {
       {
         name: "Full-Stack Calendar Web App 📅",
         desc:
-          "Full-stack calendar app with Laravel + React, REST API, Google Calendar & OpenWeather integration and role-based access (admin/user/guest).",
+          "A SPA (Single Page Application) calendar built with Laravel (REST API) and React, featuring a complete role-based access system with guest, user and admin privileges. The app includes public and private event management, .ics export, event type filtering, email reminders and drag-and-drop scheduling using React Big Calendar. It integrates Google Calendar, OpenWeather for location-based forecasts and an interactive map for event locations. Admins additionally manage users and public events through a dedicated dashboard.",
         tech: "Laravel, React, MySQL, REST, Google APIs",
         demo: "https://www.youtube.com/watch?v=i5v7vhzR-g4",
         link: "https://github.com/anndjella/laravel-react-calendar",
@@ -66,36 +66,36 @@ export const translations = {
       {
         name: "University Exam & Student Management System 🎓",
         desc:
-          "ASP.NET Web API for managing students and exams with EF Core, SQL Server, unit & integration tests (xUnit, Moq, tSQLt), JMeter performance tests and SonarQube analysis.",
+          "An ASP.NET Web API for managing students and exams, built with EF Core and using SQL Server for database management, including stored procedures and computed columns. The project focuses on testing across the presentation, application and persistence layers, using unit and integration tests for controllers and repositories (xUnit, Moq), as well as tSQLt for database-level tests. Performance tests were conducted with JMeter and code quality was monitored through SonarQube analysis.",
         tech: "C#, .NET, EF Core, SQL Server, xUnit, tSQLt, JMeter, SonarQube",
         link: "https://github.com/anndjella/student-exam-system",
       },
-      {
-        name: "ToDo Microservice App ✔️",
-        desc:
-          "Simple C# microservice application, Dockerized and deployed through a CI/CD pipeline with GitHub Actions.",
-        tech: "C#, .NET, Docker, GitHub Actions",
-        link: "https://github.com/anndjella/ToDoApp",
-      },
+      // {
+      //   name: "ToDo Microservice App ✔️",
+      //   desc:
+      //     "Simple C# microservice application, Dockerized and deployed through a CI/CD pipeline with GitHub Actions.",
+      //   tech: "C#, .NET, Docker, GitHub Actions",
+      //   link: "https://github.com/anndjella/ToDoApp",
+      // },
       {
         name: "Member Management App 🏋️",
         desc:
-          "Windows Forms client-server app for a fitness center with layered architecture and SQL database.",
-        tech: "C#, WinForms, SQL",
+          "A Windows Forms application for managing a fitness studio, using SQL Server to store and manage data, with a client-server architecture. The system supports multi-operator access and provides features for managing members, monthly invoices and attendance records. It enforces workflow rules such as invoice creation before logging attendance, category-based pricing with discounts and payment tracking that affects invoice totals. Operators can search, edit and delete members, view detailed monthly invoices and update payment statuses for current-month attendances. The project demonstrates client-server communication, database interaction and structured business logic implementation.",
+        tech: "C#, WinForms, SQL Server",
         link: "https://github.com/anndjella/member-management-app",
       },
         {
         name: "Movie Rating Prediction Model 🎬",
         desc:
-          "Built a Clojure/ClojureScript system that predicts IMDb movie ratings using a linear-regression model trained on a cleaned and feature-engineered Kaggle dataset. The project includes end-to-end data processing (cleaning, encoding, transformations), statistical modeling, a lightweight backend for serving predictions, and a frontend UI for entering movie features.",
-        tech: "Clojure, Linear Regression, ClojureScript",
+          "A Clojure/ClojureScript system that predicts IMDb movie ratings using a linear-regression model trained on a cleaned and feature-engineered Kaggle dataset. The project includes end-to-end data processing (cleaning, encoding, transformations), statistical modeling, a lightweight backend for serving predictions and a frontend UI for entering movie features.",
+        tech: "Clojure, Linear Regression, ClojureScript, SQLite",
         link: "https://github.com/anndjella/projekat_clojure",
       },
       {
         name: "Pet Shop Web Demo 🐾",
         desc:
-          "WordPress-based pet shop demo with WooCommerce and Elementor, focused on layout, responsiveness and plugins.",
-        tech: "WordPress, WooCommerce, CSS",
+          "A WordPress-based demo online pet shop built with WooCommerce, featuring a custom layout created with Elementor, multilingual support via a translation plugin, user registration and login functionality, a blog section, SEO optimization and a fully responsive design. The project highlights plugin integration, content management and frontend customization.",
+        tech: "WordPress, WooCommerce, CSS, Elementor, SEO",
         link: "https://petsmart.great-site.net/",
         linkLabel: "Visit site →"
       },
@@ -169,7 +169,7 @@ education: [
         desc: [
           "Graduated with GPA 9.32/10.",
           "Built a strong foundation in databases, software engineering and programming.",
-          "Completed a bachelor thesis titled <i><strong>'Development of an Interactive Calendar Using Laravel and React Frameworks'</strong></i> (the first project listed above - Full-Stack Calendar Web App)."
+          "Completed a bachelor thesis titled <i><strong>'Development of an Interactive Calendar Using Laravel and React Frameworks'</strong></i> (the first project listed below - Full-Stack Calendar Web App)."
         ],
       },
       ],
@@ -180,7 +180,7 @@ education: [
       githubLabel: "GitHub"
 },
     viewOnGitHub: "View on GitHub →",
-    footer: "Built with React & Vite • Hosted on GitHub Pages",
+    footer: "Built with love ❤️ • Hosted on GitHub Pages",
   },
 
 
@@ -250,7 +250,7 @@ sr: {
     {
       name: "Full-Stack kalendar veb aplikacija 📅",
       desc:
-        "Full-stack kalendar (Laravel + React) sa REST API integracijom, podrškom za Google Kalendare i vremensku prognozu, i kontrolom pristupa po ulogama (admin, korisnik, gost).",
+        "SPA (Single Page Application) kalendar izrađen pomoću Laravel (REST API) okvira i React biblioteke, sa kompletnim sistemom pristupa zasnovanim na ulogama - gosti, korisnici i administratori. Aplikacija omogućava upravljanje javnim i privatnim događajima, izvoz u .ics formatu, filtriranje po tipovima događaja, email podsetnike i raspoređivanje događaja prevlačenjem. Aplikacija je integrisana sa Google kalendarom, sa OpenWeather interfejsom za vremenske prognoze po lokaciji i interaktivnom mapom za lokacije događaja. Administratori dodatno upravljaju korisnicima i javnim događajima preko posebne kontrolne table.",
       tech: "Laravel, React, MySQL, REST, Google API",
       demo: "https://www.youtube.com/watch?v=i5v7vhzR-g4",
       link: "https://github.com/anndjella/laravel-react-calendar",
@@ -258,35 +258,35 @@ sr: {
     {
       name: "Sistem za upravljanje studentima i ispitima 🎓",
       desc:
-        "ASP.NET Web API za upravljanje studentima i ispitima sa EF Core, SQL Server, unit i integracionim testovima (xUnit, Moq, tSQLt), JMeter testovima performansi i SonarQube analizom.",
+        "ASP.NET Web API za upravljanje studentima i ispitima, izrađen sa EF Core i korišćenjem SQL Server sistema za upravljanje bazom podataka, uključujući skladištene procedure i izračunate kolone. Projekat je fokusiran na testiranje na prezentacionom, aplikativnom i perzistentnom nivou, koristeći unit i integracione testove za kontrolere i repozitorijume (xUnit, Moq), kao i tSQLt za testove na nivou baze. Performanse su testirane JMeter alatom, a kvalitet koda je praćen pomoću SonarQube analize.",
       tech: "C#, .NET, EF Core, SQL Server, xUnit, tSQLt, JMeter, SonarQube",
       link: "https://github.com/anndjella/student-exam-system",
     },
-    {
-      name: "ToDo mikroservisna aplikacija ✔️",
-      desc:
-        "Jednostavna C# mikroservisna aplikacija, dockerizovana i postavljena kroz CI/CD pipeline koristeći GitHub Actions.",
-      tech: "C#, .NET, Docker, GitHub Actions",
-      link: "https://github.com/anndjella/ToDoApp",
-    },
+    // {
+    //   name: "ToDo mikroservisna aplikacija ✔️",
+    //   desc:
+    //     "Jednostavna C# mikroservisna aplikacija, dockerizovana i postavljena kroz CI/CD pipeline koristeći GitHub Actions.",
+    //   tech: "C#, .NET, Docker, GitHub Actions",
+    //   link: "https://github.com/anndjella/ToDoApp",
+    // },
     {
       name: "Aplikacija za upravljanje članovima 🏋️",
       desc:
-        "Windows Forms client-server aplikacija za fitnes centar sa slojevitom arhitekturom i SQL bazom.",
+        "Windows Forms aplikacija za upravljanje fitnes studiom, koristeći SQL Server za čuvanje i upravljanje podacima, sa klijent-server arhitekturom. Sistem podržava pristup više operatera i nudi funkcionalnosti za upravljanje članovima, mesečnim dugovanjima i evidencijom prisustva. Implementirana su pravila, kao što su kreiranje računa pre evidentiranja prisustva, cenovnik zasnovan na kategorijama sa popustima i praćenje plaćanja koje utiče na ukupne iznose dugovanja. Operateri mogu pretraživati, uređivati i brisati članove, pregledati detaljne mesečne račune i ažurirati status plaćanja za prisustva tekućeg meseca. Projekat demonstrira komunikaciju između klijenta i servera, interakciju sa bazom podataka i implementaciju strukturirane poslovne logike.",
       tech: "C#, WinForms, SQL",
       link: "https://github.com/anndjella/member-management-app",
     },
     {
       name: "Model predviđanja ocena filmova 🎬",
       desc:
-        "Izgradila Clojure/ClojureScript sistem koji predviđa IMDb ocene filmova koristeći linearni regresioni model treniran na očišćenim i transformisanim Kaggle podacima. Projekat uključuje end-to-end obradu podataka (čišćenje, pripremu, transformacije), statističko modeliranje, lagani backend za pružanje predikcija i frontend UI za unos karakteristika filmova.",
+        "Clojure/ClojureScript sistem koji predviđa IMDb ocene filmova koristeći linearni regresioni model treniran na očišćenim i transformisanim Kaggle podacima. Projekat uključuje end-to-end obradu podataka (čišćenje, pripremu, transformacije), statističko modeliranje, lagani backend za pružanje predikcija i frontend UI za unos karakteristika filmova.",
       tech: "Clojure, Linear Regression, ClojureScript",
       link: "https://github.com/anndjella/projekat_clojure",
     },
     {
-      name: "Pet Shop Web Demo 🐾",
+      name: "Veb prodavnica za kućne ljubimce🐾",
       desc:
-        "Demo veb-sajta radnje za ljubimce izrađen u WordPress sistemu sa WooCommerce i Elementor dodacima, fokusiran na izgled, prilagodljivost i dodatke.",
+        "Demo veb prodavnica za kućne ljubimce zasnovana na WordPress-u, izrađena pomoću WooCommerce dodatka, sa prilagođenim izgledom kreiranim u dodatku Elementor, podrškom za više jezika preko prevodilačkog dodatka, funkcionalnošću registracije i prijave korisnika, sekcijom za blog, SEO optimizacijom i potpuno responzivnim dizajnom. Projekat ističe integraciju dodataka, upravljanje sadržajem i prilagođavanje frontenda.",
       tech: "WordPress, WooCommerce, CSS",
       link: "https://petsmart.great-site.net/",
       linkLabel: "Poseti sajt →"
@@ -342,7 +342,7 @@ sr: {
         place: "Portugal",
         period: "Nov 2025",
         desc:
-          "Desetodnevni međunarodni program fokusiran na održivost, timski rad i interkulturalno učenje. Takođe je osnažio moje samopouzdanje u komunikaciji na engleskom i saradnji sa ljudima iz različitih kultura.",
+          "Desetodnevni međunarodni program fokusiran na održivost, timski rad i interkulturalno učenje. Takođe je osnažio moje samopouzdanje u komunikaciji na engleskom i saradnji sa ljudima različitih kultura.",
       },
     ],
   },
@@ -362,7 +362,7 @@ sr: {
       desc: [
         "Diplomirala sa prosekom 9.32/10.",
         "Izgradila solidnu osnovu u bazama podataka, softverskom inženjerstvu i programiranju.",
-        "Odbranila diplomski rad pod naslovom <i><strong>'Razvoj interaktivnog kalendara primenom Laravel i React okvira'</strong></i> (prvi projekat naveden iznad - Full-Stack kalendar veb aplikacija)."
+        "Odbranila diplomski rad pod naslovom <i><strong>'Razvoj interaktivnog kalendara primenom Laravel i React okvira'</strong></i> (prvi projekat naveden ispod - Full-Stack kalendar veb aplikacija)."
       ],
     },
   ],
@@ -373,5 +373,5 @@ sr: {
     githubLabel: "GitHub"
   },
   viewOnGitHub: "Pogledaj na GitHub-u →",
-  footer: "Izgrađeno sa React & Vite • Hostovano na GitHub Pages",
+  footer: "Izgrađeno sa ljubavlju ❤️ • Hostovano na GitHub Pages",
 }};

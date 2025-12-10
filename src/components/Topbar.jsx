@@ -58,9 +58,9 @@ export default function Topbar({ lang, setLang, text }) {
           <a href="#experience" onClick={handleNavClick}>
             {text.nav.experience}
           </a>
-          <a href="#education" onClick={handleNavClick}>
+          {/* <a href="#education" onClick={handleNavClick}>
             {text.nav.education}
-          </a>
+          </a> */}
           <a href="#contact" onClick={handleNavClick}>
             {text.nav.contact}
           </a>
