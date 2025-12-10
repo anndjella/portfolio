@@ -28,9 +28,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
-
-
+html {
+  overflow-x: hidden;
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -86,43 +88,7 @@ button:focus-visible {
   background: linear-gradient(180deg, #4ea1ff, transparent);
   opacity: 0.45;
 }
-@media (max-width: 600px) {
-  
-  .projects-timeline {
-    padding-left: 0.5rem; 
-    padding-right: 0.5rem;
-    margin-left: 0;
-    margin-right: 0;
-    
-    max-width: 100vw; 
-    width: 100%;
-  
-  }
-}
-@media (max-width: 600px) {
-  
-  .project-content {
-    padding: 0.9rem 1.1rem;
-    
-    box-sizing: border-box; 
-    width: 100%;
-  }
 
-  .project-header {
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 600px) {
-  
-  .projects-timeline::before {
-    display: none;
-  }
-
-  .projects-timeline {
-    padding-left: 0; 
-    padding-right: 0;
-  }
-}
 .project-item {
   display: flex;
   gap: 1.6rem;
@@ -720,13 +686,13 @@ button:focus-visible {
   }
 }
 
-
 *,
 a,
 button,
 .experience-item {
   -webkit-tap-highlight-color: transparent;
 }
+
 
 .menu-overlay {
   position: fixed;
@@ -768,12 +734,7 @@ button,
     z-index: 65;
     pointer-events: none;
   }
-.topbar {
-    width: 100vw;   
-    padding: 1rem 1.2rem;    
-    box-sizing: border-box; 
-    overflow-x: hidden; 
-  }
+
   .nav.open {
     transform: translateX(0);
     pointer-events: auto;
@@ -834,4 +795,49 @@ button,
     rgba(255, 255, 255, 0.1),
     transparent
   );
+}
+
+@media (max-width: 600px) {
+  
+  .projects-timeline {
+    padding-left: 0.5rem; 
+    padding-right: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;    
+    max-width: 100vw; 
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  
+  .project-content {
+    padding: 0.9rem 1.1rem;
+    
+    box-sizing: border-box; 
+    width: 100%;
+  }
+
+  .project-header {
+    flex-wrap: wrap; 
+  }
+}
+.tech-chip {
+  white-space: nowrap; 
+}
+
+.project-tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+@media (max-width: 600px) {
+  
+  .projects-timeline::before {
+    display: none;
+  }
+
+  .projects-timeline {
+    padding-left: 0; 
+    padding-right: 0;
+  }
 }

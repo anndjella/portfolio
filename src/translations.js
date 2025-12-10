@@ -225,7 +225,7 @@ sr: {
     "Mesec dana pre završetka osnovnih studija, pridružila sam se <strong>\"Dobar start\" praksi u Nelt-u</strong>, gde sam na osnovu svojih veština i akademskog iskustva dodeljena <strong>Data inženjering timu</strong>.\n\n" +
     "Ostala sam tamo <strong>godinu dana, radeći četiri dana nedeljno u modelu plaćene prakse</strong>, uglavnom na SQL razvoju, ETL procesima i izveštavanju. Nakon vrlo intenzivne i vredne godine, odlučila sam da napustim Nelt kako bih se u potpunosti posvetila master studijama.\n\n" +
     "Trenutno završavam Master studije <strong>Softverskog inženjerstva i veštačke inteligencije</strong> na <strong>Fakultetu organizacionih nauka</strong>.\n\n" +
-    "Kako napredujem kroz master studije, tražim ulogu u kojoj mogu nastaviti da se razvijam kao inženjer i doprinosim dobro strukturisanim i pouzdanim sistemima.<strong> Najviše me zanimaju poslovi u backend razvoju i radu sa podatacima</strong>, posebno u ulogama koje kombinuju ove oblasti.",
+    "Kako napredujem kroz master studije, tražim ulogu u kojoj mogu nastaviti da se razvijam kao inženjer i doprinosim dobro strukturisanim i pouzdanim sistemima.<strong> Najviše me zanimaju poslovi u backend razvoju i radu sa podacima</strong>, posebno u ulogama koje kombinuju ove oblasti.",
 
   skills: {
     programming: ["C#", "Java", "JavaScript", "SQL","Python (osnovno)"],
