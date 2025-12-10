@@ -273,21 +273,21 @@ sr: {
       name: "Aplikacija za upravljanje članovima 🏋️",
       desc:
         "Windows Forms aplikacija za upravljanje fitnes studiom, koristeći SQL Server za čuvanje i upravljanje podacima, sa klijent-server arhitekturom. Sistem podržava pristup više operatera i nudi funkcionalnosti za upravljanje članovima, mesečnim dugovanjima i evidencijom prisustva. Implementirana su pravila, kao što su kreiranje računa pre evidentiranja prisustva, cenovnik zasnovan na kategorijama sa popustima i praćenje plaćanja koje utiče na ukupne iznose dugovanja. Operateri mogu pretraživati, uređivati i brisati članove, pregledati detaljne mesečne račune i ažurirati status plaćanja za prisustva tekućeg meseca. Projekat demonstrira komunikaciju između klijenta i servera, interakciju sa bazom podataka i implementaciju strukturirane poslovne logike.",
-      tech: "C#, WinForms, SQL",
+      tech: "C#, WinForms, SQL Server",
       link: "https://github.com/anndjella/member-management-app",
     },
     {
       name: "Model predviđanja ocena filmova 🎬",
       desc:
         "Clojure/ClojureScript sistem koji predviđa IMDb ocene filmova koristeći linearni regresioni model treniran na očišćenim i transformisanim Kaggle podacima. Projekat uključuje end-to-end obradu podataka (čišćenje, pripremu, transformacije), statističko modeliranje, lagani backend za pružanje predikcija i frontend UI za unos karakteristika filmova.",
-      tech: "Clojure, Linear Regression, ClojureScript",
+      tech: "Clojure, Linear Regression, ClojureScript, SQLite",
       link: "https://github.com/anndjella/projekat_clojure",
     },
     {
       name: "Veb prodavnica za kućne ljubimce🐾",
       desc:
         "Demo veb prodavnica za kućne ljubimce zasnovana na WordPress-u, izrađena pomoću WooCommerce dodatka, sa prilagođenim izgledom kreiranim u dodatku Elementor, podrškom za više jezika preko prevodilačkog dodatka, funkcionalnošću registracije i prijave korisnika, sekcijom za blog, SEO optimizacijom i potpuno responzivnim dizajnom. Projekat ističe integraciju dodataka, upravljanje sadržajem i prilagođavanje frontenda.",
-      tech: "WordPress, WooCommerce, CSS",
+      tech: "WordPress, WooCommerce, CSS, Elementor, SEO",
       link: "https://petsmart.great-site.net/",
       linkLabel: "Poseti sajt →"
     },
