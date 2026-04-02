@@ -1,6 +1,5 @@
 // src/App.jsx
 import { useState, useEffect } from "react";
-import "./App.css";
 import { translations } from "./translations";
 
 import ParticleBackground from './components/ParticleBackground';

@@ -17,7 +17,7 @@ export default function Experience({ text }) {
       <div className="experience-grid">
         {/* LEFT COLUMN — WORK EXPERIENCE */}
         <div className="experience-column experience-column--work">
-          <h3 className="experience-heading">Work experience</h3>
+          <h3 className="experience-heading">{text.experienceLabels.work}</h3>
 
           {work.map((item, index) => {
             const id = `work-${index}`;
@@ -68,7 +68,7 @@ export default function Experience({ text }) {
 
         {/* RIGHT COLUMN — VOLUNTEER & PROGRAMS */}
         <div className="experience-column experience-column--volunteer">
-          <h3 className="experience-heading">Volunteer Experience</h3>
+          <h3 className="experience-heading">{text.experienceLabels.volunteer}</h3>
 
           {volunteer.map((item, index) => {
             const id = `vol-${index}`;

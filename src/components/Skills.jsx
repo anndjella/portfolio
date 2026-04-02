@@ -1,7 +1,7 @@
-// // src/components/Skills.jsx
+// src/components/Skills.jsx
 export default function Skills({ text }) {
   const renderSkillsList = (skillsArray) => {
-    if (!skillsArray) return null; // ovo sprečava grešku
+    if (!skillsArray) return null;
     return (
       <ul className="skill-list">
         {skillsArray.map((skill, index) => (
@@ -11,7 +11,7 @@ export default function Skills({ text }) {
     );
   };
 
-  const skillKeys = ["programming", "web", "data", "testing", "tools"];
+  const skillKeys = Object.keys(text.skills).filter(key => key !== "soft");
 
   return (
     <section id="skills" className="section section-card">

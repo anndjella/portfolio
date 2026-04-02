@@ -29,7 +29,11 @@ export const translations = {
       master: "Master studies",
       bachelor: "Bachelor studies",
     },
-    about:
+      experienceLabels: {
+      work: "Work Experience",
+      volunteer: "Volunteer Experience"
+    },
+      about:
       "A month before finishing my bachelor studies, I joined the <strong>\"Dobar start\" (Good start) internship program at Nelt</strong>, where I was assigned to the <strong>Data Engineering team</strong> based on my skills and academic background.\n\n" +
       "I stayed there for a <strong>full year, working four days a week in a paid internship model</strong>, mainly on SQL development, ETL processes and reporting. After a very intense and valuable year, I decided to leave Nelt so I could fully focus on my Master's studies.\n\n" +
       "I am currently completing my Master's in <strong>Software Engineering & Artificial Intelligence</strong> at <strong>Faculty of Organizational Sciences</strong>.\n\n" +
@@ -40,7 +44,8 @@ export const translations = {
     web: ["React (JavaScript library)", "Laravel (PHP framework)", "HTML", "CSS", "RESTful APIs", "WordPress"],
     data: ["Microsoft SQL Server", "PostgreSQL (basic)", "Azure Data Factory (basic pipelines experience)", "Power BI (hands-on)"],
     testing: ["xUnit", "Moq", "tSQLt", "JMeter", "SonarQube"],
-    tools: ["Git", "GitHub","Azure DevOps", "Postman", "Report Builder", "MS Office"],
+    tools: ["Git", "GitHub","Swagger","Azure DevOps", "Postman", "Report Builder", "MS Office"],
+    ai: ["Claude Code","GitHub Copilot",  "OpenAI Codex"],
     soft: ["Problem Solving","Attention to Detail", "Teamwork & Collaboration", "Adaptability", "Time Management", "Communication",],
   },
     skillsGroupNames: {
@@ -49,12 +54,20 @@ export const translations = {
       data: "☁️ Data & Cloud",
       testing: "✅ Testing & Quality",
       tools: "🔧 Tools",
+      ai: "🤖 AI Tools",
       soft: "🧠 Soft Skills"
   },
 
     projectsLead:
       "Here are some of the projects that best represent my interests in backend, data and testing.",
     projects: [
+            {
+        name: "Medical Appointment System 🏥",
+        desc:
+          "A collaborative full-stack system for managing medical appointments, where I contributed mainly to database architecture design and backend development using .NET and Entity Framework. The project focuses on clean architecture principles, domain modeling and real-world scheduling logic, including slot-based appointment management. I also contributed to frontend features and worked closely with teammates through Git workflows and collaboration.",
+        tech: "GitHub, CI/CD ,C#, .NET, Entity Framework, SQL Server, React",
+        link: "https://github.com/OrionMedApp/medical-appointment",
+      },
       {
         name: "Full-Stack Calendar Web App 📅",
         desc:
@@ -63,11 +76,11 @@ export const translations = {
         demo: "https://www.youtube.com/watch?v=i5v7vhzR-g4",
         link: "https://github.com/anndjella/laravel-react-calendar",
       },
-      {
+       {
         name: "University Exam & Student Management System 🎓",
         desc:
-          "An ASP.NET Web API for managing students and exams, built with EF Core and using SQL Server for database management, including stored procedures and computed columns. The project focuses on testing across the presentation, application and persistence layers, using unit and integration tests for controllers and repositories (xUnit, Moq), as well as tSQLt for database-level tests. Performance tests were conducted with JMeter and code quality was monitored through SonarQube analysis.",
-        tech: "C#, .NET, EF Core, SQL Server, xUnit, tSQLt, JMeter, SonarQube",
+          "A full-stack university system for managing students, exams and academic workflows, built with an ASP.NET Web API backend and a React frontend. The application supports three main roles: Student, Teacher and Student Service, each with clearly defined permissions and workflows. Students can view their enrollments, register for exams and track results. Teachers work with exam registrations, grading and subject-related data. Student Service manages administrative tasks such as students, teachers, subjects, enrollments and exam terms. The backend is built using EF Core and SQL Server, with a strong focus on layered architecture, business rules and data consistency. The project also includes testing across multiple layers using xUnit, Moq and tSQLt, along with performance testing in JMeter and code quality analysis using SonarQube.",
+        tech: "C#, .NET, React, EF Core, SQL Server, xUnit, Moq, tSQLt, JMeter, SonarQube",
         link: "https://github.com/anndjella/student-exam-system",
       },
       // {
@@ -102,6 +115,18 @@ export const translations = {
     ],
     experience: {
   work: [
+      {
+      role: "Software Developer Intern",
+      place: "Orion Innovation, Belgrade (hybrid)",
+      period: "Feb 2026 - present",
+      desc: [
+        "Worked in a team of 10 engineers on a full-stack application using <strong>C# (.NET)</strong> on the backend and <strong>React</strong> on the frontend.",
+        "Actively participating in <strong>pull request workflows</strong>, including creating PRs, reviewing code and incorporating feedback.",
+        "Collaborating with team members through <strong>code reviews</strong> to ensure code quality, consistency and best practices.",
+        "Gaining experience with real-world development processes such as version control, team collaboration and structured development workflows.",
+        "Currently also assigned to a <strong>production-level .NET project</strong>, where onboarding is in progress."
+      ]
+    },
     {
       role: "Junior Data Engineer",
       place: "Nelt Group, Belgrade (hybrid)",
@@ -221,6 +246,10 @@ sr: {
     master: "Master studije",
     bachelor: "Osnovne studije",
   },
+    experienceLabels: {
+    work: "Radno iskustvo",
+    volunteer: "Volontersko iskustvo"
+  },
   about:
     "Mesec dana pre završetka osnovnih studija, pridružila sam se <strong>\"Dobar start\" praksi u Nelt-u</strong>, gde sam na osnovu svojih veština i akademskog iskustva dodeljena <strong>Data inženjering timu</strong>.\n\n" +
     "Ostala sam tamo <strong>godinu dana, radeći četiri dana nedeljno u modelu plaćene prakse</strong>, uglavnom na SQL razvoju, ETL procesima i izveštavanju. Nakon vrlo intenzivne i vredne godine, odlučila sam da napustim Nelt kako bih se u potpunosti posvetila master studijama.\n\n" +
@@ -232,7 +261,8 @@ sr: {
     web: ["React (JavaScript biblioteka)", "Laravel (PHP okvir)", "HTML", "CSS", "RESTful API", "WordPress"],
     data: ["Microsoft SQL Server", "PostgreSQL (osnovno)", "Azure Data Factory (osnovno iskustvo sa tokovima podataka)", "Power BI (praktično iskustvo)"],
     testing: ["xUnit", "Moq", "tSQLt", "JMeter", "SonarQube"],
-    tools: ["Git", "GitHub","Azure DevOps", "Postman", "Report Builder", "MS Office paket"],
+    tools: ["Git", "GitHub","Swagger","Azure DevOps", "Postman", "Report Builder", "MS Office paket"],
+    ai: [ "Claude Code","GitHub Copilot", "OpenAI Codex"],
     soft: ["Rešavanje problema","Pažnja na detalje", "Timski rad i saradnja", "Prilagodljivost", "Upravljanje vremenom", "Komunikacija"],
   },
  skillsGroupNames: {
@@ -241,12 +271,20 @@ sr: {
       data: "☁️ Data i Cloud",
       testing: "✅ Testiranje i kvalitet",
       tools: "🔧 Alati",
+      ai: "🤖 AI alati",
       soft: "🧠 Soft veštine"
   },
 
   projectsLead:
     "Ovo su neki od projekata koji najbolje predstavljaju moje interese u backend-u, podacima i testiranju.",
   projects: [
+    {
+      name: "Sistem za zakazivanje medicinskih pregleda 🏥",
+      desc:
+        "Timski full-stack projekat za upravljanje medicinskim pregledima, gde sam najviše radila na dizajnu baze podataka i backend logici koristeći .NET i Entity Framework. Projekat je fokusiran na clean arhitekturu, domensko modelovanje i realne scenarije zakazivanja termina (slot-based pristup). Takođe sam učestvovala u frontend razvoju i saradnji sa timom kroz Git i code review procese.",
+      tech: "GitHub, CI/CD, C#, .NET, Entity Framework, SQL Server, React",
+      link: "https://github.com/OrionMedApp/medical-appointment"
+    },
     {
       name: "Full-Stack kalendar veb aplikacija 📅",
       desc:
@@ -255,11 +293,11 @@ sr: {
       demo: "https://www.youtube.com/watch?v=i5v7vhzR-g4",
       link: "https://github.com/anndjella/laravel-react-calendar",
     },
-    {
+        {
       name: "Sistem za upravljanje studentima i ispitima 🎓",
       desc:
-        "ASP.NET Web API za upravljanje studentima i ispitima, izrađen sa EF Core i korišćenjem SQL Server sistema za upravljanje bazom podataka, uključujući skladištene procedure i izračunate kolone. Projekat je fokusiran na testiranje na prezentacionom, aplikativnom i perzistentnom nivou, koristeći unit i integracione testove za kontrolere i repozitorijume (xUnit, Moq), kao i tSQLt za testove na nivou baze. Performanse su testirane JMeter alatom, a kvalitet koda je praćen pomoću SonarQube analize.",
-      tech: "C#, .NET, EF Core, SQL Server, xUnit, tSQLt, JMeter, SonarQube",
+        "Full-stack univerzitetski sistem za upravljanje studentima, ispitima i akademskim procesima, izrađen sa ASP.NET Web API backendom i React frontendom. Aplikacija podržava tri glavne uloge: student, nastavnik i studentska služba, sa jasno definisanim dozvolama i tokovima rada. Studenti mogu da pregledaju svoje upise, prijavljuju ispite i prate rezultate. Nastavnici rade sa prijavama i ocenama, kao i podacima vezanim za predmete. Studentska služba upravlja administrativnim delom sistema, uključujući studente, nastavnike, predmete, upise i ispitne rokove. Backend koristi EF Core i SQL Server, uz fokus na slojevitu arhitekturu, poslovna pravila i konzistentnost podataka. Projekat uključuje testiranje na više nivoa korišćenjem xUnit, Moq i tSQLt, kao i testiranje performansi pomoću JMeter alata i analizu kvaliteta koda kroz SonarQube.",
+      tech: "C#, .NET, React, EF Core, SQL Server, xUnit, Moq, tSQLt, JMeter, SonarQube",
       link: "https://github.com/anndjella/student-exam-system",
     },
     // {
@@ -294,8 +332,20 @@ sr: {
   ],
   experience: {
     work: [
+            {
+        role: "Softver developer praktikant",
+        place: "Orion Innovation, Beograd (hybrid)",
+        period: "Feb 2026 - sada",
+        desc: [
+          "Rad u timu od 10 inženjera na full-stack aplikaciji koristeći <strong>C# (.NET)</strong> na backendu i <strong>React</strong> na frontendu.",
+          "Aktivno učešće u <strong>pull request procesu</strong> - kreiranje PR-ova, code review i implementacija sugestija.",
+          "Saradnja sa timom kroz <strong>code review</strong> radi očuvanja kvaliteta koda i primene dobrih praksi.",
+          "Sticanje iskustva u radu na realnim projektima i timskim development procesima.",
+          "Takođe uključena u <strong>produkcioni .NET projekat</strong>, trenutno u fazi onboardinga."
+        ]
+      },
       {
-        role: "Junior Data Engineer",
+        role: "Junior inženjer podataka",
         place: "Nelt Group, Beograd (hybrid)",
         period: "Sept 2024 - Avg 2025",
         desc: [
