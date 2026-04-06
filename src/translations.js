@@ -116,13 +116,13 @@ export const translations = {
     experience: {
   work: [
       {
-      role: "Software Developer Intern",
+      role: "Software Engineer Intern",
       place: "Orion Innovation, Belgrade (hybrid)",
       period: "Feb 2026 - present",
       desc: [
         "Worked in a team of 10 engineers on a full-stack application using <strong>C# (.NET)</strong> on the backend and <strong>React</strong> on the frontend.",
-        "Actively participating in <strong>pull request workflows</strong>, including creating PRs, reviewing code and incorporating feedback.",
-        "Collaborating with team members through <strong>code reviews</strong> to ensure code quality, consistency and best practices.",
+        "Actively participated in <strong>pull request workflows</strong>, including creating PRs, reviewing code and incorporating feedback.",
+        "Collaborated with team members through <strong>code reviews</strong> to ensure code quality, consistency and best practices.",
         "Gaining experience with real-world development processes such as version control, team collaboration and structured development workflows.",
         "Currently also assigned to a <strong>production-level .NET project</strong>, where onboarding is in progress."
       ]
@@ -333,7 +333,7 @@ sr: {
   experience: {
     work: [
             {
-        role: "Softver developer praktikant",
+        role: "Softver inženjer praktikant",
         place: "Orion Innovation, Beograd (hybrid)",
         period: "Feb 2026 - sada",
         desc: [
