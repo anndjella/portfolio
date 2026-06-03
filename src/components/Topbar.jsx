@@ -107,11 +107,9 @@ export default function Topbar({ lang, setLang, text }) {
             aria-label={`${open ? "Zatvori meni" : "Otvori meni"}`}
             aria-expanded={open}
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
-              <path className="line line1" d="M3 7h18" strokeWidth="2" strokeLinecap="round" />
-              <path className="line line2" d="M3 12h18" strokeWidth="2" strokeLinecap="round" />
-              <path className="line line3" d="M3 17h18" strokeWidth="2" strokeLinecap="round" />
-            </svg>
+            <span className="burger-line burger-line-1" aria-hidden="true" />
+            <span className="burger-line burger-line-2" aria-hidden="true" />
+            <span className="burger-line burger-line-3" aria-hidden="true" />
           </button>
         </div>
       </header>
