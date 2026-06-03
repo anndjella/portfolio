@@ -41,7 +41,10 @@ export default function Projects({ text }) {
                 </div>
               </div>
 
-              <p className="project-desc">{p.desc}</p>
+              <p
+                className="project-desc"
+                dangerouslySetInnerHTML={{ __html: p.desc }}
+              />
 
               <div className="project-tech-chips">
                 {p.tech.split(",").map((t) => {

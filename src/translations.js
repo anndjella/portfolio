@@ -11,6 +11,7 @@ export const translations = {
       education: "Education",
       contact: "Contact",
     },
+    heroEyebrow: "Software • Data • Quality",
     heroTitle: "Software Engineering & Data Engineering",
     heroSubtitle:
       "Master's student in Software Engineering & AI with one year of Data Engineering experience. I enjoy building backend and full-stack solutions, working with SQL, ETL processes and delivering well-tested, reliable systems.",
@@ -34,14 +35,13 @@ export const translations = {
       volunteer: "Volunteer Experience"
     },
       about:
-      "A month before finishing my bachelor studies, I joined the <strong>\"Dobar start\" (Good start) internship program at Nelt</strong>, where I was assigned to the <strong>Data Engineering team</strong> based on my skills and academic background.\n\n" +
-      "I stayed there for a <strong>full year, working four days a week in a paid internship model</strong>, mainly on SQL development, ETL processes and reporting. After a very intense and valuable year, I decided to leave Nelt so I could fully focus on my Master's studies.\n\n" +
-      "I am currently completing my Master's in <strong>Software Engineering & Artificial Intelligence</strong> at <strong>Faculty of Organizational Sciences</strong>.\n\n" +
-      "As I progress through my Master's studies, I'm looking for a role where I can keep improving as an engineer and contribute to well-structured, reliable systems. I'm most interested in <strong>backend development and data-related work</strong>, especially in roles that bring those areas together.",
+      "I am a software engineering Master's student and currently work as a <strong>full-stack developer intern</strong>. I have a soft spot for <strong>backend, data and systems that actually make sense</strong>. Before that, I gained one year of experience as a <strong>Data Engineer</strong> in a large data-driven company, working with SQL, ETL processes and reporting.\n\n" +
+      "I enjoy building things that are clear, useful and reliable, whether that means shaping backend logic, working with data or connecting the pieces on the frontend. I like learning by doing, asking questions, improving a little with every task and staying curious even when the bug is being unnecessarily dramatic.\n\n" +
+      "Progress matters a lot to me. I love learning, growing and becoming better at what I do, even when it takes time. One quote I often come back to, in many aspects of life, is: <strong>\"It's a slow process, but quitting won't speed it up.\"</strong>",
 
    skills: {
     programming: ["C#", "Java", "JavaScript", "SQL","Python (basic)"],
-    web: ["React (JavaScript library)", "Laravel (PHP framework)", "HTML", "CSS", "RESTful APIs", "WordPress"],
+    web: ["Angular", "React (JavaScript library)", "Laravel (PHP framework)", "HTML", "CSS", "RESTful APIs", "WordPress"],
     data: ["Microsoft SQL Server", "PostgreSQL (basic)", "Azure Data Factory (basic pipelines experience)", "Power BI (hands-on)"],
     testing: ["xUnit", "Moq", "tSQLt", "JMeter", "SonarQube"],
     tools: ["Git", "GitHub","Swagger","Azure DevOps", "Postman", "Report Builder", "MS Office"],
@@ -64,14 +64,14 @@ export const translations = {
             {
         name: "Medical Appointment System 🏥",
         desc:
-          "A collaborative full-stack system for managing medical appointments, where I contributed mainly to database architecture design and backend development using .NET and Entity Framework. The project focuses on clean architecture principles, domain modeling and real-world scheduling logic, including slot-based appointment management. I also contributed to frontend features and worked closely with teammates through Git workflows and collaboration.",
+          "A collaborative <strong>full-stack medical scheduling system</strong> built around real appointment workflows. I contributed mainly to <strong>database design and backend development</strong> with .NET and Entity Framework, including slot-based scheduling logic and team collaboration through Git and code reviews.",
         tech: "GitHub, CI/CD ,C#, .NET, Entity Framework, SQL Server, React",
         link: "https://github.com/OrionMedApp/medical-appointment",
       },
       {
         name: "Full-Stack Calendar Web App 📅",
         desc:
-          "A SPA (Single Page Application) calendar built with Laravel (REST API) and React, featuring a complete role-based access system with guest, user and admin privileges. The app includes public and private event management, .ics export, event type filtering, email reminders and drag-and-drop scheduling using React Big Calendar. It integrates Google Calendar, OpenWeather for location-based forecasts and an interactive map for event locations. Admins additionally manage users and public events through a dedicated dashboard.",
+          "A <strong>Laravel + React</strong> calendar app with role-based access for guests, users and admins. It supports public/private events, <strong>drag-and-drop scheduling</strong>, .ics export, email reminders and integrations with Google Calendar, OpenWeather and maps.",
         tech: "Laravel, React, MySQL, REST, Google APIs",
         demo: "https://www.youtube.com/watch?v=i5v7vhzR-g4",
         link: "https://github.com/anndjella/laravel-react-calendar",
@@ -79,7 +79,7 @@ export const translations = {
        {
         name: "University Exam & Student Management System 🎓",
         desc:
-          "A full-stack university system for managing students, exams and academic workflows, built with an ASP.NET Web API backend and a React frontend. The application supports three main roles: Student, Teacher and Student Service, each with clearly defined permissions and workflows. Students can view their enrollments, register for exams and track results. Teachers work with exam registrations, grading and subject-related data. Student Service manages administrative tasks such as students, teachers, subjects, enrollments and exam terms. The backend is built using EF Core and SQL Server, with a strong focus on layered architecture, business rules and data consistency. The project also includes testing across multiple layers using xUnit, Moq and tSQLt, along with performance testing in JMeter and code quality analysis using SonarQube.",
+          "A <strong>full-stack university management system</strong> for students, exams and academic administration. The backend uses <strong>ASP.NET Web API, EF Core and SQL Server</strong>, with clear role-based workflows and testing across multiple layers using xUnit, Moq, tSQLt, JMeter and SonarQube.",
         tech: "C#, .NET, React, EF Core, SQL Server, xUnit, Moq, tSQLt, JMeter, SonarQube",
         link: "https://github.com/anndjella/student-exam-system",
       },
@@ -93,21 +93,21 @@ export const translations = {
       {
         name: "Member Management App 🏋️",
         desc:
-          "A Windows Forms application for managing a fitness studio, using SQL Server to store and manage data, with a client-server architecture. The system supports multi-operator access and provides features for managing members, monthly invoices and attendance records. It enforces workflow rules such as invoice creation before logging attendance, category-based pricing with discounts and payment tracking that affects invoice totals. Operators can search, edit and delete members, view detailed monthly invoices and update payment statuses for current-month attendances. The project demonstrates client-server communication, database interaction and structured business logic implementation.",
+          "A <strong>client-server Windows Forms app</strong> for managing fitness studio members, invoices and attendance. The project focuses on <strong>SQL Server data handling</strong>, multi-operator work and business rules such as monthly billing, payment status and category-based pricing.",
         tech: "C#, WinForms, SQL Server",
         link: "https://github.com/anndjella/member-management-app",
       },
         {
         name: "Movie Rating Prediction Model 🎬",
         desc:
-          "A Clojure/ClojureScript system that predicts IMDb movie ratings using a linear-regression model trained on a cleaned and feature-engineered Kaggle dataset. The project includes end-to-end data processing (cleaning, encoding, transformations), statistical modeling, a lightweight backend for serving predictions and a frontend UI for entering movie features.",
+          "A <strong>Clojure/ClojureScript prediction system</strong> for estimating IMDb movie ratings. It includes data cleaning, feature preparation, a <strong>linear regression model</strong>, a lightweight backend and a simple UI for entering movie features.",
         tech: "Clojure, Linear Regression, ClojureScript, SQLite",
         link: "https://github.com/anndjella/projekat_clojure",
       },
       {
         name: "Pet Shop Web Demo 🐾",
         desc:
-          "A WordPress-based demo online pet shop built with WooCommerce, featuring a custom layout created with Elementor, multilingual support via a translation plugin, user registration and login functionality, a blog section, SEO optimization and a fully responsive design. The project highlights plugin integration, content management and frontend customization.",
+          "A <strong>WordPress/WooCommerce demo shop</strong> with a custom Elementor layout, multilingual support, user login, blog content and SEO setup. The focus was on responsive design, plugin integration and practical content management.",
         tech: "WordPress, WooCommerce, CSS, Elementor, SEO",
         link: "https://petsmart.great-site.net/",
         linkLabel: "Visit site →"
@@ -116,15 +116,14 @@ export const translations = {
     experience: {
   work: [
       {
-      role: "Software Engineer Intern",
+      role: "Full-Stack Developer Intern",
       place: "Orion Innovation, Belgrade (hybrid)",
       period: "Feb 2026 - present",
       desc: [
-        "Worked in a team of 10 engineers on a full-stack application using <strong>C# (.NET)</strong> on the backend and <strong>React</strong> on the frontend.",
-        "Actively participated in <strong>pull request workflows</strong>, including creating PRs, reviewing code and incorporating feedback.",
-        "Collaborated with team members through <strong>code reviews</strong> to ensure code quality, consistency and best practices.",
-        "Gaining experience with real-world development processes such as version control, team collaboration and structured development workflows.",
-        "Currently also assigned to a <strong>production-level .NET project</strong>, where onboarding is in progress."
+        "Worked with a team of 10 interns on a <strong>full-stack application</strong>, contributing to backend development, frontend features and team workflows through Git and code reviews.",
+        "Currently working in a <strong>production microservice environment</strong> on an application that incorporates <strong>OpenAI capabilities</strong> into real product features.",
+        "Developing features using <strong>.NET</strong> on the backend and <strong>Angular</strong> on the frontend, with focus on maintainable implementation and integration with existing services.",
+        "Actively participating in <strong>pull request workflows</strong>, including creating PRs, reviewing code, applying feedback and collaborating with more experienced engineers."
       ]
     },
     {
@@ -228,6 +227,7 @@ sr: {
     education: "Obrazovanje",
     contact: "Kontakt",
   },
+  heroEyebrow: "Softver • Podaci • Kvalitet",
   heroTitle: "Softversko inženjerstvo & Data inženjering",
   heroSubtitle:
     "Master student Softverskog inženjerstva i veštačke inteligencije sa jednogodišnjim iskustvom u Data inženjeringu. Uživam u izradi backend i full-stack rešenja, radu sa SQL-om, ETL procesima i isporuci dobro testiranih i pouzdanih sistema.",
@@ -251,14 +251,13 @@ sr: {
     volunteer: "Volontersko iskustvo"
   },
   about:
-    "Mesec dana pre završetka osnovnih studija, pridružila sam se <strong>\"Dobar start\" praksi u Nelt-u</strong>, gde sam na osnovu svojih veština i akademskog iskustva dodeljena <strong>Data inženjering timu</strong>.\n\n" +
-    "Ostala sam tamo <strong>godinu dana, radeći četiri dana nedeljno u modelu plaćene prakse</strong>, uglavnom na SQL razvoju, ETL procesima i izveštavanju. Nakon vrlo intenzivne i vredne godine, odlučila sam da napustim Nelt kako bih se u potpunosti posvetila master studijama.\n\n" +
-    "Trenutno završavam Master studije <strong>Softverskog inženjerstva i veštačke inteligencije</strong> na <strong>Fakultetu organizacionih nauka</strong>.\n\n" +
-    "Kako napredujem kroz master studije, tražim ulogu u kojoj mogu nastaviti da se razvijam kao inženjer i doprinosim dobro strukturisanim i pouzdanim sistemima.<strong> Najviše me zanimaju poslovi u backend razvoju i radu sa podacima</strong>, posebno u ulogama koje kombinuju ove oblasti.",
+    "Ja sam master student softverskog inženjerstva i trenutno radim kao <strong>full-stack developer praktikant</strong>. Imam posebnu naklonost ka <strong>backendu, podacima i sistemima koji stvarno imaju smisla</strong>. Iza sebe imam godinu dana iskustva kao <strong>Data Engineer</strong> u velikoj data-driven kompaniji, gde sam radila sa SQL-om, ETL procesima i izveštavanjem.\n\n" +
+    "Volim da gradim stvari koje su jasne, korisne i pouzdane, bilo da je u pitanju backend logika, rad sa podacima ili povezivanje delova na frontendu. Najviše mi prija kada učim kroz konkretan rad, postavljam pitanja, napredujem korak po korak i ostanem radoznala čak i kad bug odluči da bude malo dramatičan.\n\n" +
+    "Obožavam da napredujem, učim i razvijam se, čak i kada proces traje duže nego što bih volela. Citat kojim se često vodim i kom se vraćam u mnogim aspektima života je: <strong>\"It's a slow process, but quitting won't speed it up.\"</strong>",
 
   skills: {
     programming: ["C#", "Java", "JavaScript", "SQL","Python (osnovno)"],
-    web: ["React (JavaScript biblioteka)", "Laravel (PHP okvir)", "HTML", "CSS", "RESTful API", "WordPress"],
+    web: ["Angular", "React (JavaScript biblioteka)", "Laravel (PHP okvir)", "HTML", "CSS", "RESTful API", "WordPress"],
     data: ["Microsoft SQL Server", "PostgreSQL (osnovno)", "Azure Data Factory (osnovno iskustvo sa tokovima podataka)", "Power BI (praktično iskustvo)"],
     testing: ["xUnit", "Moq", "tSQLt", "JMeter", "SonarQube"],
     tools: ["Git", "GitHub","Swagger","Azure DevOps", "Postman", "Report Builder", "MS Office paket"],
@@ -281,14 +280,14 @@ sr: {
     {
       name: "Sistem za zakazivanje medicinskih pregleda 🏥",
       desc:
-        "Timski full-stack projekat za upravljanje medicinskim pregledima, gde sam najviše radila na dizajnu baze podataka i backend logici koristeći .NET i Entity Framework. Projekat je fokusiran na clean arhitekturu, domensko modelovanje i realne scenarije zakazivanja termina (slot-based pristup). Takođe sam učestvovala u frontend razvoju i saradnji sa timom kroz Git i code review procese.",
+        "Timski <strong>full-stack sistem za zakazivanje medicinskih pregleda</strong>, zasnovan na realnim tokovima rada. Najviše sam radila na <strong>dizajnu baze podataka i backend logici</strong> u .NET-u i Entity Framework-u, uključujući slot-based zakazivanje i saradnju kroz Git i code review.",
       tech: "GitHub, CI/CD, C#, .NET, Entity Framework, SQL Server, React",
       link: "https://github.com/OrionMedApp/medical-appointment"
     },
     {
       name: "Full-Stack kalendar veb aplikacija 📅",
       desc:
-        "SPA (Single Page Application) kalendar izrađen pomoću Laravel (REST API) okvira i React biblioteke, sa kompletnim sistemom pristupa zasnovanim na ulogama - gosti, korisnici i administratori. Aplikacija omogućava upravljanje javnim i privatnim događajima, izvoz u .ics formatu, filtriranje po tipovima događaja, email podsetnike i raspoređivanje događaja prevlačenjem. Aplikacija je integrisana sa Google kalendarom, sa OpenWeather interfejsom za vremenske prognoze po lokaciji i interaktivnom mapom za lokacije događaja. Administratori dodatno upravljaju korisnicima i javnim događajima preko posebne kontrolne table.",
+        "<strong>Laravel + React</strong> kalendar aplikacija sa pristupom po ulogama za goste, korisnike i administratore. Podržava javne i privatne događaje, <strong>drag-and-drop zakazivanje</strong>, .ics export, email podsetnike i integracije sa Google Calendar, OpenWeather i mapama.",
       tech: "Laravel, React, MySQL, REST, Google API",
       demo: "https://www.youtube.com/watch?v=i5v7vhzR-g4",
       link: "https://github.com/anndjella/laravel-react-calendar",
@@ -296,7 +295,7 @@ sr: {
         {
       name: "Sistem za upravljanje studentima i ispitima 🎓",
       desc:
-        "Full-stack univerzitetski sistem za upravljanje studentima, ispitima i akademskim procesima, izrađen sa ASP.NET Web API backendom i React frontendom. Aplikacija podržava tri glavne uloge: student, nastavnik i studentska služba, sa jasno definisanim dozvolama i tokovima rada. Studenti mogu da pregledaju svoje upise, prijavljuju ispite i prate rezultate. Nastavnici rade sa prijavama i ocenama, kao i podacima vezanim za predmete. Studentska služba upravlja administrativnim delom sistema, uključujući studente, nastavnike, predmete, upise i ispitne rokove. Backend koristi EF Core i SQL Server, uz fokus na slojevitu arhitekturu, poslovna pravila i konzistentnost podataka. Projekat uključuje testiranje na više nivoa korišćenjem xUnit, Moq i tSQLt, kao i testiranje performansi pomoću JMeter alata i analizu kvaliteta koda kroz SonarQube.",
+        "<strong>Full-stack univerzitetski sistem</strong> za studente, ispite i administrativne procese. Backend je rađen kroz <strong>ASP.NET Web API, EF Core i SQL Server</strong>, sa jasnim tokovima po ulogama i testiranjem kroz xUnit, Moq, tSQLt, JMeter i SonarQube.",
       tech: "C#, .NET, React, EF Core, SQL Server, xUnit, Moq, tSQLt, JMeter, SonarQube",
       link: "https://github.com/anndjella/student-exam-system",
     },
@@ -310,21 +309,21 @@ sr: {
     {
       name: "Aplikacija za upravljanje članovima 🏋️",
       desc:
-        "Windows Forms aplikacija za upravljanje fitnes studiom, koristeći SQL Server za čuvanje i upravljanje podacima, sa klijent-server arhitekturom. Sistem podržava pristup više operatera i nudi funkcionalnosti za upravljanje članovima, mesečnim dugovanjima i evidencijom prisustva. Implementirana su pravila, kao što su kreiranje računa pre evidentiranja prisustva, cenovnik zasnovan na kategorijama sa popustima i praćenje plaćanja koje utiče na ukupne iznose dugovanja. Operateri mogu pretraživati, uređivati i brisati članove, pregledati detaljne mesečne račune i ažurirati status plaćanja za prisustva tekućeg meseca. Projekat demonstrira komunikaciju između klijenta i servera, interakciju sa bazom podataka i implementaciju strukturirane poslovne logike.",
+        "<strong>Klijent-server Windows Forms aplikacija</strong> za upravljanje članovima, računima i evidencijom prisustva u fitnes studiju. Fokus je na <strong>SQL Server radu sa podacima</strong>, pristupu više operatera i poslovnim pravilima kao što su mesečna zaduženja, status plaćanja i kategorije članova.",
       tech: "C#, WinForms, SQL Server",
       link: "https://github.com/anndjella/member-management-app",
     },
     {
       name: "Model predviđanja ocena filmova 🎬",
       desc:
-        "Clojure/ClojureScript sistem koji predviđa IMDb ocene filmova koristeći linearni regresioni model treniran na očišćenim i transformisanim Kaggle podacima. Projekat uključuje end-to-end obradu podataka (čišćenje, pripremu, transformacije), statističko modeliranje, lagani backend za pružanje predikcija i frontend UI za unos karakteristika filmova.",
+        "<strong>Clojure/ClojureScript sistem za predviđanje IMDb ocena</strong> filmova. Uključuje čišćenje podataka, pripremu karakteristika, <strong>linearni regresioni model</strong>, lagani backend i jednostavan UI za unos podataka o filmu.",
       tech: "Clojure, Linear Regression, ClojureScript, SQLite",
       link: "https://github.com/anndjella/projekat_clojure",
     },
     {
       name: "Veb prodavnica za kućne ljubimce🐾",
       desc:
-        "Demo veb prodavnica za kućne ljubimce zasnovana na WordPress-u, izrađena pomoću WooCommerce dodatka, sa prilagođenim izgledom kreiranim u dodatku Elementor, podrškom za više jezika preko prevodilačkog dodatka, funkcionalnošću registracije i prijave korisnika, sekcijom za blog, SEO optimizacijom i potpuno responzivnim dizajnom. Projekat ističe integraciju dodataka, upravljanje sadržajem i prilagođavanje frontenda.",
+        "<strong>WordPress/WooCommerce demo prodavnica</strong> sa prilagođenim Elementor dizajnom, višejezičnom podrškom, korisničkom prijavom, blogom i SEO podešavanjima. Fokus je bio na responzivnom dizajnu, integraciji dodataka i praktičnom upravljanju sadržajem.",
       tech: "WordPress, WooCommerce, CSS, Elementor, SEO",
       link: "https://petsmart.great-site.net/",
       linkLabel: "Poseti sajt →"
@@ -333,15 +332,14 @@ sr: {
   experience: {
     work: [
             {
-        role: "Softver inženjer praktikant",
+        role: "Full-Stack Developer Praktikant",
         place: "Orion Innovation, Beograd (hybrid)",
         period: "Feb 2026 - sada",
         desc: [
-          "Rad u timu od 10 inženjera na full-stack aplikaciji koristeći <strong>C# (.NET)</strong> na backendu i <strong>React</strong> na frontendu.",
-          "Aktivno učešće u <strong>pull request procesu</strong> - kreiranje PR-ova, code review i implementacija sugestija.",
-          "Saradnja sa timom kroz <strong>code review</strong> radi očuvanja kvaliteta koda i primene dobrih praksi.",
-          "Sticanje iskustva u radu na realnim projektima i timskim development procesima.",
-          "Takođe uključena u <strong>produkcioni .NET projekat</strong>, trenutno u fazi onboardinga."
+          "Radila u timu od 10 praktikanata na <strong>full-stack aplikaciji</strong>, uz doprinos backend razvoju, frontend funkcionalnostima i timskim procesima kroz Git i code review.",
+          "Trenutno radim u <strong>produkcijskom mikroservisnom okruženju</strong> na aplikaciji koja uključuje <strong>OpenAI mogućnosti</strong> u realne funkcionalnosti proizvoda.",
+          "Razvijam funkcionalnosti koristeći <strong>.NET</strong> na backendu i <strong>Angular</strong> na frontendu, sa fokusom na održivu implementaciju i integraciju sa postojećim servisima.",
+          "Aktivno učestvujem u <strong>pull request procesu</strong> - kreiranje PR-ova, code review, primena sugestija i saradnja sa iskusnijim inženjerima."
         ]
       },
       {

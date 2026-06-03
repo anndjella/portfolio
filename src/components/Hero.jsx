@@ -3,7 +3,7 @@ export default function Hero({ text }) {
   return (
     <section id="home" className="section hero">
       <div className="hero-left">
-        <p className="hero-eyebrow">Software • Data • Quality</p>
+        <p className="hero-eyebrow">{text.heroEyebrow}</p>
         <h1>{text.heroTitle}</h1>
         <p className="hero-subtitle">{text.heroSubtitle}</p>
         <div className="hero-actions">
